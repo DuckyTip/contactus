@@ -240,6 +240,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ContactUs.Models.csproj">
+      <Project>{082032b0-4090-4972-bc25-685bd1f271af}</Project>
+      <Name>ContactUs.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContactUs.Services\ContactUs.Services.csproj">
+      <Project>{ee48a8b2-07a4-42c4-bf8b-d2c1a93a9f8f}</Project>
+      <Name>ContactUs.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
